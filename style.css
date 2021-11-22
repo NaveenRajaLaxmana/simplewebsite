@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+nav
+{
+    position: relative;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: linear-gradient(45deg,rgb(70, 76, 134),rgb(35, 84, 216));
+    box-shadow: 0 3px 2px 0 rgba(0,0,0,.5);
+}
+nav h1
+{
+    display: inline-block;
+    cursor: pointer;
+}
+nav .links
+{
+    display: flex;
+}
+nav .links li
+{
+    list-style: none;
+    margin-right: 10px;
+}
+nav .links li a
+{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+}
+nav .links li a:hover
+{
+    color: #fff;
+}
+.banner
+{
+    position: relative;
+    height: 400px;
+    width: 100vw;
+}
+.banner img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.content h2
+{
+    text-align: center;
+}
+.content button
+{
+    margin-top: 25px;
+    align-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: orange;
+    color: #fff;
+}
+/* css for register page */
+.register.banner
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('./images/image.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register.banner .register-form
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 200px;
+    min-width: 300px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,.5),
+                -3px -3px 5px 0px rgba(0,0,0,.5)
+}
+.register.banner .register-form h3
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+.register.banner .register-form .input-group
+{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.register.banner .register-form .input-group input
+{
+    margin-top: 10px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+}
+.register.banner .register-form .input-group input::placeholder
+{
+    color: #fff;
+}
+.register.banner .register-form .btn-submit
+{
+    margin-top: 20px;
+    align-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: orange;
+    color: #fff;
+}

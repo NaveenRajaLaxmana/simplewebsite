@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <h1 class="webapp-name">Weber</h1>
+        <ul class="links">
+            <li><a href="#about"> About</a></li>
+            <li><a href="#signin"> Signin</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <img src="./images/image.jpg" alt="homepage"/>
+    </div>
+    <div class="content">
+        <h2>Content</h2>
+        <button type="button" class="clear-btn">clear the key</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded',(e) => {
+            if(localStorage.getItem('key')==null){
+                window.location.href='/register.html'
+            }else{
+
+            // alert('Welcome Project Success')
+            }
+            const clearbtn = document.querySelector('.clear-btn')
+            clearbtn.addEventListener('click',(e) => {
+                localStorage.removeItem('key')
+                window.location.href='/register.html'
+            })
+        })
+    </script>
+</body>
+</html>
